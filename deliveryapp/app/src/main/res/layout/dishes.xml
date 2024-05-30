@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dishes_edit"
+    android:rowCount="2"
+    android:columnCount="2"
+    android:layout_margin="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/foods"
+            android:layout_width="172.5dp"
+            android:layout_height="250.61dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/foodimg"
+            android:layout_width="168dp"
+            android:layout_height="164dp"
+            android:src="@drawable/plate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_bias="0.3"/>
+
+        <TextView
+            android:id="@+id/foodname"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:text="Fried Shrimp"
+            android:textColor="#FFFFFF"
+            android:textFontWeight="600"
+            android:textSize="13sp"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/foodimg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/foodrate"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="4.8(163)"
+            android:textColor="#686F82"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.78"
+            app:layout_constraintHorizontal_bias="0.3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/rateimg"
+            android:layout_width="9.75dp"
+            android:layout_height="9.75dp"
+            android:src="@drawable/star"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.78"
+            app:layout_constraintHorizontal_bias="0.14"
+            android:layout_marginLeft="1.63dp"
+            android:layout_marginTop="1.63dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/timeimg"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:src="@drawable/stopwatchstart"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.78"
+            app:layout_constraintHorizontal_bias="0.64"
+            android:layout_marginLeft="1.63dp"
+            android:layout_marginTop="1.63dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/foodtime"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="20 min"
+            android:textColor="#686F82"
+            android:textFontWeight="600"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.78"
+            app:layout_constraintHorizontal_bias="0.89"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/foodcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$29.00"
+            android:textColor="#FF7269"
+            android:textFontWeight="700"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.9"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</GridLayout>
